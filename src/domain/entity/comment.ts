@@ -5,3 +5,5 @@ export type Comment = {
   userId: string
   created: Date
 }
+
+export type CreateComment = Omit<Comment, 'id' | 'created'>

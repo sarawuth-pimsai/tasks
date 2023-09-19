@@ -9,6 +9,13 @@ export type Task = {
   created: string
 }
 
+export type CreateTask = Omit<Task, 'id' | 'created'>
+
+export type UpdateOwnerTaskStatus = Omit<
+  Task,
+  'topic' | 'description' | 'created'
+>
+
 export type TaskFilter = Partial<
   Omit<Task, 'id' | 'topic' | 'description' | 'created'>
 >
