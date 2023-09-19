@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "removeComments": true,
+    "baseUrl": "src",
+    "paths": {
+      "@application/*": ["./application/*"],
+      "@cmd/*": ["./cmd/*"],
+      "@configs/*": ["./configs/*"],
+      "@domain/*": ["./domain/*"],
+      "@errors/*": ["./errors/*"],
+      "@persistent/*": ["./infrastructure/persistent/*"],
+      "@rest/*": ["./presentation/rest/*"],
+      "@context/*": ["./presentation/context/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

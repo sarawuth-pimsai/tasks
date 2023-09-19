@@ -1,0 +1,18 @@
+{
+  "verbose": true,
+  "clearMocks": true,
+  "transform": {
+    "^.+\\.(t|j)sx?$": ["@swc-node/jest"]
+  },
+  "moduleNameMapper": {
+    "^@application/(.*)$": "<rootDir>/application/$1",
+    "^@cmd/(.*)$": "<rootDir>/cmd/$1",
+    "^@configs/(.*)$": "<rootDir>/configs/$1",
+    "^@domain/(.*)$": "<rootDir>/domain/$1",
+    "^@errors/(.*)$": "<rootDir>/errors/$1",
+    "^@persistent/(.*)$": "<rootDir>/infrastructure/persistent/$1",
+    "^@context/(.*)$": "<rootDir>/presentation/context/$1",
+    "^@rest/(.*)$": "<rootDir>/presentation/rest/$1"
+  },
+  "testMatch": ["<rootDir>/**/*.spec.ts"]
+}
