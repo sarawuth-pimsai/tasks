@@ -11,6 +11,8 @@ export type Task = {
 
 export type CreateTask = Omit<Task, 'id' | 'created'>
 
+export type UpdateTask = Omit<Task, 'created'>
+
 export type UpdateOwnerTaskStatus = Omit<
   Task,
   'topic' | 'description' | 'created'
